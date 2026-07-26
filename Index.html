@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prem Prakash Maurya — Finance & Market Analyst Portfolio</title>
+<meta name="description" content="Portfolio of Prem Prakash Maurya, MBA Finance & Marketing — financial modeling, Power BI dashboards, SQL and business analytics projects, internships and certifications." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Prem Prakash Maurya — Finance & Marketing Analyst Portfolio" />
+<meta property="og:description" content="Financial models, analytics dashboards and business insights. MBA Finance & Marketing, Prayagraj, India." />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --bg:#05060f;
+  --bg-2:#0a0c1a;
+  --surface:rgba(255,255,255,.04);
+  --surface-2:rgba(255,255,255,.06);
+  --border:rgba(255,255,255,.09);
+  --text:#f2f4fb;
+  --muted:rgba(242,244,251,.62);
+  --faint:rgba(242,244,251,.40);
+  --blue:#3b82f6;
+  --blue-2:#2563eb;
+  --blue-3:#60a5fa;
+  --radius:22px;
+  --radius-lg:30px;
+  --max:1240px;
+  --glow:0 18px 50px -20px rgba(59,130,246,.65);
+  --font-display:"Space Grotesk",system-ui,sans-serif;
+  --font-sans:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:100px;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font-sans);background:var(--bg);color:var(--text);
+  line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:
+    radial-gradient(900px 620px at 12% -8%, rgba(59,130,246,.28), transparent 60%),
+    radial-gradient(760px 560px at 92% 4%, rgba(37,99,235,.22), transparent 60%),
+    radial-gradient(900px 700px at 50% 108%, rgba(96,165,250,.14), transparent 62%),
+    var(--bg);
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.035;
+  background-image:linear-gradient(rgba(255,255,255,.7) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.7) 1px,transparent 1px);
+  background-size:52px 52px;
+  -webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 30%,transparent 78%);
+  mask-image:radial-gradient(ellipse at 50% 30%,#000 30%,transparent 78%);
+}
+h1,h2,h3,h4,h5{font-family:var(--font-display);letter-spacing:-.02em;line-height:1.08;font-weight:700}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button,input,select,textarea{font:inherit;color:inherit}
+::selection{background:rgba(59,130,246,.4)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px;width:100%}
+.grad-text{background:linear-gradient(105deg,#fff 8%,var(--blue-3) 55%,var(--blue-2) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.glass{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.glass-strong{background:linear-gradient(160deg,rgba(255,255,255,.075),rgba(255,255,255,.03));border:1px solid var(--border);border-radius:var(--radius-lg);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 30px 80px -50px rgba(0,0,0,.9)}
+.lift{transition:transform .35s cubic-bezier(.2,.7,.3,1),box-shadow .35s ease,border-color .35s ease}
+.lift:hover{transform:translateY(-6px);border-color:rgba(96,165,250,.4);box-shadow:0 34px 70px -34px rgba(37,99,235,.5)}
+.chip{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:7px 15px;border-radius:999px;background:var(--surface);border:1px solid var(--border)}
+.tag{font-size:11.5px;font-weight:500;color:var(--muted);padding:5px 11px;border-radius:999px;background:rgba(59,130,246,.10);border:1px solid rgba(96,165,250,.22)}
+.dot{width:7px;height:7px;border-radius:999px;background:var(--blue);box-shadow:0 0 0 4px rgba(59,130,246,.16)}
+.pulse{animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+/* ============ BUTTONS ============ */
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;border:1px solid transparent;transition:transform .25s ease,box-shadow .25s ease,background .25s ease,border-color .25s ease;white-space:nowrap}
+.btn-primary{background:linear-gradient(120deg,var(--blue-2),var(--blue),var(--blue-3));color:#fff;box-shadow:var(--glow)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 24px 60px -20px rgba(59,130,246,.85)}
+.btn-ghost{background:var(--surface);border-color:var(--border);color:var(--text)}
+.btn-ghost:hover{transform:translateY(-2px);background:var(--surface-2);border-color:rgba(96,165,250,.45)}
+.btn-sm{padding:10px 18px;font-size:12.5px}
+
+/* ============ NAV ============ */
+header{position:fixed;top:14px;left:0;right:0;z-index:80}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:11px 14px 11px 20px;border-radius:999px;background:rgba(8,10,22,.72);border:1px solid var(--border);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 20px 50px -30px rgba(0,0,0,.9)}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:15px}
+.brand span.mark{width:30px;height:30px;border-radius:10px;display:grid;place-items:center;font-size:11px;background:linear-gradient(135deg,var(--blue-2),var(--blue-3));color:#fff}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{font-size:13px;font-weight:500;color:var(--muted);padding:8px 13px;border-radius:999px;transition:color .2s,background .2s}
+.nav-links a:hover{color:#fff;background:var(--surface)}
+.nav-links a.active{color:#fff;background:rgba(59,130,246,.18);border:1px solid rgba(96,165,250,.3)}
+.nav-cta{display:flex;align-items:center;gap:8px}
+.burger{display:none;width:42px;height:42px;border-radius:999px;background:var(--surface);border:1px solid var(--border);cursor:pointer;place-items:center}
+.mobile-menu{display:none;margin-top:10px;padding:12px;flex-direction:column;gap:4px}
+.mobile-menu a{padding:12px 16px;border-radius:14px;font-size:14px;color:var(--muted)}
+.mobile-menu a:hover{background:var(--surface);color:#fff}
+.mobile-menu.open{display:flex}
+.progress{position:fixed;top:0;left:0;height:2px;width:0;z-index:95;background:linear-gradient(90deg,var(--blue-2),var(--blue-3))}
+
+/* ============ SECTIONS ============ */
+section{position:relative;padding:104px 0}
+.sec-head{text-align:center;max-width:760px;margin:0 auto 54px}
+.sec-head h2{font-size:clamp(2rem,4.6vw,3.4rem);margin-top:16px}
+.sec-head p{margin-top:14px;color:var(--muted);font-size:15px}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ============ HERO ============ */
+#home{padding:150px 0 70px;min-height:100vh;display:flex;align-items:center}
+.hero{display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.7rem,7vw,5rem);margin-top:22px;letter-spacing:-.035em}
+.hero .lead{margin-top:20px;font-size:clamp(1rem,1.6vw,1.2rem);font-weight:600;color:#dbe4ff;max-width:34ch}
+.hero .sub{margin-top:14px;color:var(--muted);font-size:15px;max-width:56ch}
+.role-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:38px;max-width:560px}
+.stat{padding:16px 14px;border-radius:18px;background:var(--surface);border:1px solid var(--border)}
+.stat b{display:block;font-family:var(--font-display);font-size:28px;line-height:1}
+.stat small{display:block;margin-top:6px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.card-wrap{position:relative;display:flex;justify-content:flex-end}
+.card-inner{position:relative;transition:transform .25s ease-out}
+.card-glow{position:absolute;inset:-42px;border-radius:60px;filter:blur(70px);opacity:.55;background:conic-gradient(from 130deg,var(--blue-2),var(--blue-3),#1d4ed8,var(--blue-2))}
+.profile{position:relative;width:min(88vw,400px);aspect-ratio:4/4.7;display:grid;place-items:center;padding:9px;overflow:hidden}
+.profile .halo{position:absolute;inset:0;opacity:.6;background:radial-gradient(circle at 30% 18%,rgba(59,130,246,.45),transparent 52%),radial-gradient(circle at 82% 88%,rgba(29,78,216,.4),transparent 55%)}
+. .avatar{
+  width:148px;
+  height:148px;
+  border-radius:30%;
+  overflow:hidden;
+  border: 1px solid rgba(255,255,255,.15);
+  box-shadow:0 24px 70px -18px rgba(59,130,246,.45);
+}
+
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center top;
+  display:block;
+}
+.float{position:absolute;padding:9px 1px;font-size:12px;font-weight:600;border-radius:16px;background:rgba(10,12,26,.78);border:1px solid var(--border);backdrop-filter:blur(12px);animation:floaty 6.5s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.marquee{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:16px 0;overflow:hidden;background:rgba(255,255,255,.015)}
+.marquee-track{display:flex;gap:44px;white-space:nowrap;animation:marq 34s linear infinite;width:max-content}
+.marquee-track span{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--faint);display:flex;align-items:center;gap:44px}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ============ GRIDS ============ */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pad{padding:26px}
+.pad-lg{padding:32px}
+.card-title{font-family:var(--font-display);font-size:17px;font-weight:600}
+.eyebrow{font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue-3)}
+.body-text{color:var(--muted);font-size:14.5px}
+.body-text+.body-text{margin-top:12px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.list{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:14px}
+.list li{position:relative;padding-left:18px;color:var(--muted);font-size:14px}
+.list li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:999px;background:var(--blue)}
+.kv{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.kv div{display:flex;gap:12px;font-size:14px}
+.kv b{min-width:132px;color:#fff;font-weight:600;font-size:13px}
+.kv span{color:var(--muted)}
+
+/* ============ ACCORDION (skills) ============ */
+.acc{border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);overflow:hidden;transition:border-color .3s}
+.acc.open{border-color:rgba(96,165,250,.42);background:var(--surface-2)}
+.acc-head{width:100%;display:flex;align-items:center;gap:14px;padding:20px 22px;background:none;border:0;cursor:pointer;text-align:left}
+.acc-icon{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;font-size:19px;background:rgba(59,130,246,.14);border:1px solid rgba(96,165,250,.24);flex:0 0 auto}
+.acc-meta{flex:1;min-width:0}
+.acc-meta strong{display:block;font-family:var(--font-display);font-size:15.5px}
+.acc-meta small{color:var(--faint);font-size:12px}
+.acc-plus{font-size:20px;color:var(--blue-3);transition:transform .3s}
+.acc.open .acc-plus{transform:rotate(45deg)}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.2,.7,.3,1)}
+.acc-body-inner{padding:0 22px 24px;border-top:1px solid var(--border);margin-top:2px;padding-top:20px}
+.level{height:7px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden;margin-top:8px}
+.level i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--blue-2),var(--blue-3))}
+
+/* ============ PROJECTS ============ */
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-bottom:38px}
+.filter{padding:9px 18px;border-radius:999px;font-size:12.5px;font-weight:600;background:var(--surface);border:1px solid var(--border);color:var(--muted);cursor:pointer;transition:all .25s}
+.filter:hover{color:#fff}
+.filter.active{background:linear-gradient(120deg,var(--blue-2),var(--blue-3));color:#fff;border-color:transparent;box-shadow:var(--glow)}
+.shot{aspect-ratio:16/9;border-radius:18px;overflow:hidden;position:relative;display:grid;place-items:center;border:1px solid var(--border)}
+.shot .label{position:relative;text-align:center;padding:16px}
+.shot .label b{font-family:var(--font-display);font-size:15px;display:block}
+.shot .label small{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.proj-foot{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+
+/* ============ MODAL ============ */
+.modal{position:fixed;inset:0;z-index:120;display:none;align-items:flex-start;justify-content:center;padding:24px 16px;overflow-y:auto;background:rgba(3,4,12,.78);backdrop-filter:blur(8px)}
+.modal.open{display:flex;animation:fade .3s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.modal-card{width:min(100%,900px);margin:auto;background:linear-gradient(165deg,#0d1022,#080a16);border:1px solid var(--border);border-radius:var(--radius-lg);padding:30px;position:relative;box-shadow:0 50px 120px -40px #000;animation:pop .35s cubic-bezier(.2,.7,.3,1)}
+@keyframes pop{from{transform:translateY(20px) scale(.98);opacity:0}to{transform:none;opacity:1}}
+.modal-close{position:absolute;top:18px;right:18px;width:38px;height:38px;border-radius:999px;background:var(--surface);border:1px solid var(--border);cursor:pointer;display:grid;place-items:center;font-size:17px}
+.modal-close:hover{background:var(--surface-2)}
+.modal h3{font-size:clamp(1.35rem,3vw,1.9rem);padding-right:44px}
+.block{margin-top:22px}
+.block h5{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue-3);margin-bottom:8px}
+
+/* ============ TIMELINE ============ */
+.tl{position:relative;padding-left:30px}
+.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:1px;background:linear-gradient(180deg,var(--blue),rgba(96,165,250,.05))}
+.tl-item{position:relative;margin-bottom:20px}
+.tl-item::before{content:"";position:absolute;left:-26px;top:26px;width:12px;height:12px;border-radius:999px;background:var(--blue);box-shadow:0 0 0 5px rgba(59,130,246,.16)}
+
+/* ============ CERTS ============ */
+.cert-img{height:120px;border-radius:16px;display:grid;place-items:center;font-size:40px;border:1px solid var(--border);background:linear-gradient(135deg,rgba(59,130,246,.2),rgba(29,78,216,.08))}
+.badge-wip{font-size:9.5px;font-weight:800;letter-spacing:.12em;padding:4px 9px;border-radius:999px;background:rgba(250,204,21,.14);border:1px solid rgba(250,204,21,.3);color:#fde68a}
+.badge-done{font-size:9.5px;font-weight:800;letter-spacing:.12em;padding:4px 9px;border-radius:999px;background:rgba(34,197,94,.14);border:1px solid rgba(34,197,94,.3);color:#86efac}
+.cert-card{cursor:pointer}
+.cert-thumb{position:relative;height:176px;border-radius:16px;overflow:hidden;border:1px solid var(--border);background:linear-gradient(135deg,#0e1224,#080a16)}
+.cert-thumb img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .55s cubic-bezier(.2,.7,.3,1)}
+.cert-card:hover .cert-thumb img{transform:scale(1.06)}
+.cert-thumb .peek{position:absolute;left:0;right:0;bottom:0;padding:10px 14px;font-size:11.5px;font-weight:600;letter-spacing:.05em;color:#fff;background:linear-gradient(0deg,rgba(4,5,13,.94),rgba(4,5,13,0));opacity:0;transform:translateY(6px);transition:opacity .3s,transform .3s}
+.cert-card:hover .cert-thumb .peek{opacity:1;transform:none}
+.cert-fallback{width:100%;height:100%;display:grid;place-items:center;font-size:44px}
+
+/* ============ LIGHTBOX / IMAGE VIEWER ============ */
+.shot-img{width:100%;border-radius:18px;border:1px solid var(--border);background:#fff;display:block}
+.zoom{cursor:zoom-in}
+.viewer-wrap{margin-top:20px;border-radius:20px;overflow:hidden;border:1px solid var(--border);background:#fff}
+.viewer-wrap img{width:100%;display:block}
+.modal-shot{position:relative;margin-top:20px;border-radius:20px;overflow:hidden;border:1px solid var(--border);background:#fff;cursor:zoom-in}
+.modal-shot img{width:100%;display:block}
+.modal-shot .peek{position:absolute;left:0;right:0;bottom:0;padding:12px 16px;font-size:12px;font-weight:600;color:#fff;background:linear-gradient(0deg,rgba(4,5,13,.9),rgba(4,5,13,0))}
+.lightbox{margin-top:20px;border-radius:20px;overflow:auto;border:1px solid var(--border);background:#fff;max-height:70vh}
+.lightbox img{width:100%;display:block}
+
+/* ============ EXPERIENCE ============ */
+.co-logo{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:16px;letter-spacing:.02em;color:#fff;background:linear-gradient(135deg,var(--blue-2),var(--blue-3));flex:0 0 auto;box-shadow:0 16px 36px -18px rgba(59,130,246,.9)}
+.exp-more{max-height:0;overflow:hidden;transition:max-height .55s cubic-bezier(.2,.7,.3,1)}
+
+/* ============ RESUME PREVIEW ============ */
+.resume-preview{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--border);background:#fff;cursor:zoom-in}
+.resume-preview img{width:100%;display:block;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.resume-preview:hover img{transform:scale(1.025)}
+.resume-preview .peek{position:absolute;left:0;right:0;bottom:0;padding:14px 18px;font-size:12.5px;font-weight:600;color:#fff;background:linear-gradient(0deg,rgba(4,5,13,.92),rgba(4,5,13,0))}
+
+/* ============ CTA BAND ============ */
+.cta-band{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;padding:34px;position:relative;overflow:hidden}
+.cta-band::before{content:"";position:absolute;inset:-40%;background:conic-gradient(from 90deg,rgba(37,99,235,.22),rgba(96,165,250,.1),rgba(29,78,216,.24),rgba(37,99,235,.22));filter:blur(60px);opacity:.65;pointer-events:none}
+.cta-band>*{position:relative}
+
+/* ============ SKILL BARS ============ */
+.level i[data-w]{width:0;transition:width 1.15s cubic-bezier(.2,.7,.3,1)}
+
+/* ============ FORM ============ */
+.field{display:block;margin-bottom:16px}
+.field span{font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
+.field input,.field select,.field textarea{width:100%;margin-top:8px;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:14px;padding:13px 15px;font-size:14px;outline:none;transition:border-color .2s,background .2s}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);background:rgba(59,130,246,.08)}
+.field textarea{resize:vertical;min-height:110px}
+.field option{background:#0b0e1c}
+footer{padding:44px 0;border-top:1px solid var(--border);text-align:center;color:var(--faint);font-size:12.5px}
+.top{position:fixed;right:20px;bottom:20px;z-index:70;width:46px;height:46px;border-radius:999px;display:none;place-items:center;background:rgba(10,12,26,.85);border:1px solid var(--border);cursor:pointer;backdrop-filter:blur(10px)}
+.top.show{display:grid}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:1024px){
+  .hero{grid-template-columns:1fr;gap:44px}
+  .card-wrap{justify-content:center}
+  .grid-3,.grid-4{grid-template-columns:repeat(2,1fr)}
+  .nav-links{display:none}
+  .burger{display:grid}
+}
+@media (max-width:720px){
+  section{padding:78px 0}
+  #home{padding:130px 0 50px}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .pad,.pad-lg{padding:22px}
+  .modal-card{padding:22px}
+  .kv div{flex-direction:column;gap:2px}
+  .kv b{min-width:0}
+  .float{display:none}
+  .nav-cta .btn{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="#home"><span class="mark">PPM</span> Prem Prakash Maurya</a>
+      <div class="nav-links" id="navLinks"></div>
+      <div class="nav-cta">
+        <a class="btn btn-primary btn-sm" href="#contact">Hire Me</a>
+        <button class="burger" id="burger" aria-label="Toggle menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-menu glass-strong" id="mobileMenu"></div>
+  </div>
+</header>
+
+<!-- ================= HOME ================= -->
+<section id="home">
+  <div class="wrap hero">
+    <div class="reveal">
+      <div class="chip"><span class="dot pulse"></span> MBA Finance &amp; Marketing · Prayagraj, India</div>
+      <h1>Prem Prakash<br /><span class="grad-text">Maurya</span></h1>
+      <p class="lead"> Aspiring Financial & Business Analyst </p>
+      <p class="sub"> MBA student specializing in Finance and Marketing, building practical skills in Financial Analysis, Business Analytics, and Data Visualization through hands-on projects using Excel, SQL, Power BI, and Financial Modeling. </p>
+      <div class="role-row" id="roleRow"></div>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#projects">View My Projects ↓</a>
+        <a class="btn btn-ghost" href="#resume">Online Resume</a>
+        <a class="btn btn-ghost" href="#contact">Contact Me</a>
+      </div>
+      <div class="stats" id="statsRow"></div>
+    </div>
+
+    <div class="card-wrap reveal">
+      <div class="card-inner" id="cardInner">
+        <div class="card-glow"></div>
+        <div class="profile glass-strong">
+          <div class="halo"></div>
+          <div style="position:relative;display:grid;justify-items:center;gap:16px;text-align:center">
+             <div class="avatar">
+                <img src=" https://raw.githubusercontent.com/Premprakashmaurya/Premprakashmaurya.github.io/main/Images/Prem_Profile.png" alt="Prem Prakash Maurya">
+             </div>
+            <div>
+              <div style="font-family:var(--font-display);font-weight:600;font-size:18px">Prem Prakash Maurya</div>
+              <div style="color:var(--muted);font-size:12.5px;margin-top:4px">MBA · Finance &amp; Marketing</div>
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+              <span class="tag">Available for hire</span>
+              <span class="tag">India · Remote</span>
+            </div>
+          </div>
+        </div>
+        <span class="float" style="left:-22px;top:36px">📊 Power BI</span>
+        <span class="float" style="right:-16px;top:112px;animation-delay:1.2s">💹 DCF Model</span>
+        <span class="float" style="left:-16px;bottom:120px;animation-delay:.6s">🗄️ SQL</span>
+        <span class="float" style="right:-22px;bottom:44px;animation-delay:1.8s">📈 Excel</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee"><div class="marquee-track" id="marquee"></div></div>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="chip reveal"><span class="dot"></span> About Me</div>
+      <h2 class="reveal">My Journey in <span class="grad-text">Finance & Analytics</span></h2>
+      <p class="reveal">Learn about my background, education, career goals, and the skills I'm building to become a Financial & Business Analyst.</p>
+    </div>
+    <div class="grid-2" id="aboutGrid" style="align-items:start"></div>
+    <div class="grid-3 reveal" style="margin-top:20px" id="aboutExtra"></div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="chip reveal"><span class="dot"></span> Skills</div>
+      <h2 class="reveal">Technical &amp; Professional <span class="grad-text">Skills</span></h2>
+      <p class="reveal">A practical overview of the technical tools, business knowledge, and analytical skills I have developed through academic learning, internships, certifications, and hands-on projects.</p>
+    </div>
+    <div class="grid-2" id="skillsGrid" style="align-items:start"></div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="chip reveal"><span class="dot"></span> Portfolio</div>
+      <h2 class="reveal">Projects /span></h2>
+      <p class="reveal">A collection of finance, business analytics, and data visualization projects demonstrating practical problem-solving, analytical thinking, and business decision-making using real-world datasets and industry tools.</p>
+    </div>
+    <div class="filters reveal" id="filters"></div>
+    <div class="grid-2" id="projGrid" style="align-items:start"></div>
+
+    <h3 style="margin:64px 0 20px;font-size:1.5rem" class="reveal">Written Case Studies</h3>
+    <div class="grid-3" id="caseGrid"></div>
+  </div>
+</section> 
+ <!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="chip reveal"><span class="dot"></span> Experience</div>
+      <h2 class="reveal">Internships &amp; <span class="grad-text">Professional Experience</span></h2>
+      <p class="reveal">Practical experience gained through internships in business development, marketing, CRM, market research, and analytics across the EdTech and Real Estate Technology sectors.</p>
+    </div>
+    <div class="tl" id="expList"></div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section id="certifications">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="chip reveal"><span class="dot"></span> Certifications</div>
+      <h2 class="reveal">Certifications &amp; <span class="grad-text">Continuous Learning</span></h2>
+      <p class="reveal">Professional certifications and continuous learning that strengthen my knowledge in finance, business analytics, digital marketing, accounting, and data analysis.</p>
+    </div>
+    <div class="grid-3" id="certGrid" style="align-items:start"></div>
+    <h3 style="margin:64px 0 20px;font-size:1.5rem" class="reveal">Currently Learning</h3>
+    <div class="grid-3" id="learnGrid"></div>
+  </div>
+</section>
+
+<!-- ================= INTERNSHIP CERTIFICATIONS ================= -->
+<section id="internship-certs">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="chip reveal"><span class="dot"></span> Verified Experience</div>
+      <h2 class="reveal">Internship <span class="grad-text">Certificates</span></h2>
+      <p class="reveal">Official internship completion certificates verifying my practical experience, learning, and professional contributions.</p>
+    </div>
+    <div class="grid-2" id="internCertGrid" style="align-items:start"></div>
+  </div>
+</section>
+
+<!-- ================= RESUME ================= -->
+<section id="resume">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="chip reveal"><span class="dot"></span> Resume</div>
+      <h2 class="reveal">Professional <span class="grad-text">Resume</span></h2>
+      <p class="reveal">A complete overview of my education, internships, technical skills, projects, certifications, and career objectives.</p>
+    </div>
+    <div id="resumeWrap"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="chip reveal"><span class="dot"></span> Contact</div>
+      <h2 class="reveal">Let's <span class="grad-text">Connect</span></h2>
+      <p class="reveal">Open to internship and full-time opportunities in Financial Analysis, Business Analysis, FP&amp;A, Business Intelligence, and Data Analytics across India.</p>
+    </div>
+    <div class="glass pad reveal" style="display:flex;gap:14px;align-items:center;margin-bottom:22px">
+      <span class="dot pulse" style="background:#22c55e;box-shadow:0 0 0 5px rgba(34,197,94,.16)"></span>
+      <p class="body-text"><strong style="color:#fff">Currently Available</strong> — Seeking internship and entry-level opportunities in Financial Analysis, Business Analysis, FP&amp;A, Business Intelligence, and Data Analytics. Open to on-site, hybrid, and remote roles across India. Typical response time: within 24 hours.</p>
+    </div>
+    <div class="grid-2" style="align-items:start">
+      <div id="contactCards" style="display:flex;flex-direction:column;gap:14px"></div>
+       <form class="glass-strong pad-lg reveal"
+      id="contactForm"
+      action="https://formsubmit.co/premprakashmaurya517@gmail.com"
+      method="POST">
+      <input type="hidden" name="_subject" value="New Portfolio Contact">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://premprakashmaurya.github.io/">
+        <label class="field"><span>Your Name</span><input type="text" name="name" required placeholder="Full name" /></label>
+        <label class="field"><span>Email Address</span><input type="email" name="email" required placeholder="you@email.com" /></label>
+        <label class="field"><span>Subject</span>
+          <select name="subject">
+            <option>Job Opportunity</option>
+            <option>Internship Opportunity</option>
+            <option>Freelance / Collaboration</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label class="field"><span>Message</span><textarea name="message" required placeholder="Tell me about the role or opportunity..."></textarea></label>
+        <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">Send Message →</button>
+        <p class="body-text" id="formNote" style="margin-top:12px;font-size:12.5px;text-align:center"></p>
+      </form>
+
+    </div>
+  </div>
+</section>  
+<footer>
+   <div class="wrap">
+  © 2026 <strong class="grad-text">Prem Prakash Maurya</strong> · MBA Student (Finance &amp; Marketing) · Aspiring Financial &amp; Business Analyst
+</div>
+</footer>
+
+<button class="top" id="toTop" aria-label="Back to top">↑</button>
+
+<div class="modal" id="modal"><div class="modal-card" id="modalCard"></div></div>
+
+<script>
+/* =====================================================================
+   DATA — edit everything below to update the site content
+   ===================================================================== */
+const NAV = [
+  ["Home","home"],["About","about"],["Skills","skills"],["Projects","projects"],
+  ["Experience","experience"],["Certifications","certifications"],["Resume","resume"],["Contact","contact"]
+];
+
+const ROLES = [ "Financial Analyst","Business Analyst", "Finance Roles"," Marketing Roles"];
+
+const STATS = [["5+","Projects Built"],["2","Internships"],["4+","Certifications"],["2","Specializations"]];
+
+const PROFILE = {
+  email:"premprakashmaurya517@gmail.com",
+  linkedin:"https://www.linkedin.com/in/prem-prakash-maurya-finance",
+  github:"https://github.com/Premprakashmaurya",
+  resume:"https://i.postimg.cc/bJKy9D0P/Prem-Prakash-maurya-resume.png",
+  location:"Prayagraj, Uttar Pradesh, India"
+};
+
+ const ABOUT = [
+  { h:"Who I Am", p:"I am Prem Prakash Maurya, an MBA student specializing in Finance and Marketing at United Institute of Management, Prayagraj. With a B.Sc. in Mathematics and Chemistry, I enjoy solving business and financial problems through analytical thinking, structured problem-solving, and data-driven decision-making." },
+
+  { h:"My Journey", p:"My journey began with mathematics, expanded into computer applications and accounting through ADCA and Tally, and later progressed into finance and business analytics during my MBA. Along the way, I developed practical skills in Excel, SQL, Power BI, Financial Modeling, and strengthened them through internships and self-built projects." },
+
+  { h:"Education", p:"MBA in Finance & Marketing — United Institute of Management, Prayagraj (Jul 2025 – May 2027). B.Sc. in Mathematics & Chemistry — Prof. Rajendra Singh (Rajju Bhaiya) University, Prayagraj (Aug 2021 – Aug 2024). Supported by certifications in Advanced Excel, Tally ERP, and ADCA." },
+
+  { h:"Career Objective", p:"To begin my career in Financial Analysis, Business Analysis, or Business Intelligence, where I can contribute through financial analysis, reporting, dashboards, and data-driven decision-making while continuously strengthening my analytical and technical skills." },
+
+  { h:"Why Finance", p:"Finance helps organizations measure performance, evaluate opportunities, and make informed business decisions. I enjoy understanding the numbers behind business performance and using financial insights to support better decision-making." },
+
+  { h:"Why Analytics", p:"Analytics transforms raw data into meaningful insights. Using tools like Excel, SQL, and Power BI, I enjoy identifying patterns, building dashboards, and presenting information that supports smarter business decisions." },
+
+  { h:"Current Learning", p:"Currently strengthening my knowledge in Financial Modeling, Advanced Excel, SQL, Power BI & Tableau, Python fundamentals, and Digital Marketing while building practical projects to improve my analytical and problem-solving skills." },
+
+  { h:"Long-Term Goal", p:"To build expertise in financial analysis, business intelligence, and data-driven decision-making before progressing into senior Financial Analyst, Business Analyst, or FP&A roles." },
+
+  { h:"Strengths", p:"Analytical thinking, quantitative problem-solving, Financial Modeling, Excel, SQL, data visualization, adaptability, continuous learning, and a structured approach to solving business challenges." },
+
+  { h:"Interests", p:"Financial markets, business strategy, data visualization, company annual reports, dashboard development, emerging technologies, and AI-powered productivity tools." },
+
+  { h:"Languages", p:"English — Professional working proficiency for business communication, presentations, and documentation. Hindi — Native proficiency." }
+];
+
+const EDU = [
+  { icon:"🎓", t:"MBA — Finance & Marketing", s:"United Institute of Management, Prayagraj · Jul 2025 – May 2027" },
+  { icon:"🎓", t:"B.Sc. — Mathematics & Chemistry", s:"PRSU (Rajju Bhaiya University), Prayagraj · Aug 2021 – Aug 2024" }
+];
+
+const SKILLS = [
+ { icon:"📈", name:"Microsoft Excel", tagline:"Intermediate · Data Analysis & Financial Modeling", level:74,
+  overview:"Excel is my primary tool for financial analysis, data cleaning, dashboard creation, and financial modeling. I use it to organize, analyze, and present data for business decision-making.",
+  lvl:"Intermediate",
+  learned:"Completed an Advanced Excel certification and strengthened my skills through MBA coursework, financial modeling, dashboard projects, and internships.",
+  topics:["Pivot Tables & Charts","XLOOKUP & INDEX/MATCH","Conditional Formatting","Data Validation","What-If Analysis","Basic Power Query","Charts & Dashboards","Financial Functions"],
+  projects:"Blinkit Sales Dashboard, Reliance Financial Model, internship reports and business analysis tasks.",
+  business:"Data analysis, MIS reporting, financial reporting, sales analysis, KPI tracking, budgeting support, and dashboard creation.",
+  future:"Improve Power Query, Excel automation, advanced financial modeling, and dashboard optimization." },
+
+{ icon:"🗄️", name:"SQL", tagline:"Intermediate · MySQL", level:68,
+  overview:"I use SQL to retrieve, organize, and analyze structured business data from relational databases for reporting and analysis.",
+  lvl:"Intermediate",
+  learned:"Learned through self-study, structured practice, and by developing a Library Management System database project.",
+  topics:["SELECT","WHERE","JOINs","GROUP BY","ORDER BY","Aggregate Functions","Subqueries","CRUD Operations","Normalization","Primary & Foreign Keys"],
+  projects:"Library Management System with normalized tables and business queries.",
+  business:"Business reporting, customer analysis, transaction analysis, and preparing datasets for dashboards.",
+  future:"Window Functions, CTEs, Stored Procedures, Views, and SQL performance optimization." },
+
+{ icon:"📊", name:"Power BI", tagline:"Intermediate · Data Visualization", level:67,
+  overview:"I build interactive dashboards to visualize business performance and transform raw data into meaningful insights.",
+  lvl:"Intermediate",
+  learned:"Self-learned through practical projects and continuous practice using business datasets.",
+  topics:["Data Modeling","Power Query","DAX Basics","Relationships","Interactive Dashboards","KPI Cards","Slicers","Charts & Visualizations"],
+  projects:"Sales Dashboard, Blinkit Dashboard, and business performance visualization projects.",
+  business:"Executive dashboards, sales reporting, KPI monitoring, and business performance analysis.",
+  future:"Strengthen DAX, advanced dashboard design, and business intelligence best practices." },
+
+{ icon:"🐍", name:"Python", tagline:"Beginner · Data Analysis", level:38,
+  overview:"Currently learning Python to strengthen my data analysis skills and automate repetitive analytical tasks.",
+  lvl:"Beginner",
+  learned:"Self-learning alongside my MBA with a focus on data analysis rather than software development.",
+  topics:["Python Basics","Variables","Loops","Functions","Lists","Dictionaries","NumPy Basics","Pandas Basics"],
+  projects:"Currently building practice programs and preparing for future analytics projects.",
+  business:"Learning to automate data processing and support business analytics workflows.",
+  future:"Pandas, NumPy, Matplotlib, data visualization, automation, and financial analysis using Python." },
+ 
+  { icon:"📉", name:"Tableau", tagline:"Beginner · Data Visualization", level:45,
+  overview:"I am learning Tableau to strengthen my business intelligence and data visualization skills alongside Power BI.",
+  lvl:"Beginner",
+  learned:"Self-learning through practice datasets and dashboard-building exercises.",
+  topics:["Connecting Data Sources","Dimensions & Measures","Calculated Fields","Filters","Charts","Dashboards"],
+  projects:"Practice dashboards created using sample business datasets.",
+  business:"Creating interactive dashboards and presenting business insights visually.",
+  future:"Build more dashboards and improve data visualization techniques." },
+
+{ icon:"💹", name:"Financial Modeling", tagline:"Intermediate · Financial Analysis", level:70,
+  overview:"I build financial models to analyze company performance using financial statements, ratio analysis, forecasting, and valuation techniques.",
+  lvl:"Intermediate",
+  learned:"Learned through self-study, practical projects, and MBA coursework.",
+  topics:["Income Statement","Balance Sheet","Cash Flow Statement","Ratio Analysis","Forecasting","DCF Basics","Sensitivity Analysis","Valuation Basics"],
+  projects:"Reliance Industries Financial Model with three financial statements, ratio analysis, forecasting, and DCF valuation.",
+  business:"Financial analysis, investment evaluation, budgeting support, and business decision-making.",
+  future:"Strengthen financial modeling skills by building models for additional companies." },
+
+{ icon:"🧭", name:"Business Analysis", tagline:"Intermediate · Business Problem Solving", level:64,
+  overview:"I apply analytical thinking to understand business problems, evaluate information, and support better business decisions.",
+  lvl:"Intermediate",
+  learned:"Developed through MBA coursework, internships, and business projects.",
+  topics:["SWOT Analysis","Market Research","Business Feasibility","KPI Identification","Process Analysis","Report Preparation","Presentation Skills","Problem Solving"],
+  projects:"Business feasibility study, internship market research, CRM research, and business analysis assignments.",
+  business:"Business research, market analysis, reporting, process improvement, and decision support.",
+  future:"Gain practical experience by working on real business analysis projects." },
+
+{ icon:"🎯", name:"Digital Marketing", tagline:"Intermediate · Marketing & Research", level:62,
+  overview:"I understand digital marketing fundamentals and have practical exposure through internships, outreach activities, and self-learning.",
+  lvl:"Intermediate",
+  learned:"Developed through MBA marketing specialization, internships, and digital marketing coursework.",
+  topics:["SEO Basics","Content Marketing","Social Media Marketing","Lead Generation","Market Research","Competitor Analysis","Customer Engagement","Email Marketing Basics"],
+  projects:"Marketing activities for the Gyapak platform, lead generation, coaching and library outreach, and market research.",
+  business:"Customer acquisition, lead generation, market research, and marketing strategy support.",
+  future:"Strengthen practical digital marketing skills through additional projects and campaigns." },
+
+ { icon:"💻", name:"GitHub", tagline:"Working Knowledge · Portfolio Hosting", level:55,
+  overview:"I use GitHub to publish and organize my projects, making them accessible to recruiters and showcasing my practical work.",
+  lvl:"Working Knowledge",
+  learned:"Self-learned while creating and maintaining my portfolio projects.",
+  topics:["Repositories","README Documentation","Project Organization","File Management","Portfolio Publishing","Sharing Projects"],
+  projects:"Published finance, SQL, Power BI, and web portfolio projects on GitHub.",
+  business:"Maintaining project documentation, sharing work with recruiters, and organizing project files.",
+  future:"Improve project documentation and maintain a well-structured professional portfolio." },
+
+{ icon:"📒", name:"Tally ERP", tagline:"Intermediate · Accounting Software", level:65,
+  overview:"I use Tally ERP for accounting tasks including ledger management, voucher entries, GST, payroll, and financial reporting.",
+  lvl:"Intermediate",
+  learned:"Completed Tally ERP certification through practical accounting exercises and coursework.",
+  topics:["Ledger Management","Voucher Entry","GST","Payroll","Inventory Basics","Bank Reconciliation","Financial Statements"],
+  projects:"Accounting practice exercises completed during certification training.",
+  business:"Bookkeeping, GST compliance, payroll processing, and financial record management.",
+  future:"Strengthen practical accounting skills through real business applications." },
+
+{ icon:"🧾", name:"Accounting & Taxation", tagline:"Intermediate · Financial Accounting", level:66,
+  overview:"Developed a foundation in accounting and taxation through the Accountant Fundamental Training (AFT) Program covering practical accounting concepts and taxation basics.",
+  lvl:"Intermediate",
+  learned:"Completed the Accountant Fundamental Training (AFT) Program covering 13 subjects in accounting and taxation.",
+  topics:["Financial Accounting","Journal & Ledger","Trial Balance","Final Accounts","GST Fundamentals","Income Tax Basics","TDS Basics","Accounting Principles"],
+  projects:"Completed practical accounting exercises and taxation assignments during the AFT Program.",
+  business:"Preparing financial records, understanding taxation concepts, maintaining accounting accuracy, and supporting financial operations.",
+  future:"Continue strengthening accounting knowledge through practical application and professional experience." }
+];
+
+const PROJECTS = [
+  {
+  cat:"powerbi",
+  category:"Power BI · Data Analytics",
+  title:"Sales Analytics Dashboard",
+
+  grad:"linear-gradient(135deg,#2563eb,#60a5fa)",
+
+  img:"https://raw.githubusercontent.com/Premprakashmaurya/PowerBI-Sales-Analytics-Dashboard/main/Screenshot/Dashboard_Overview.png",
+
+  desc:"Interactive Power BI sales dashboard delivering insight into sales performance, profitability, customer behaviour and regional trends through dynamic visuals.",
+
+  problem:"Management had sales data but no single view of which regions, products and customer segments actually drove profit.",
+
+  tools:["Power BI","DAX","Power Query","Excel"],
+
+  links:[
+    ["GitHub Repository","https://github.com/Premprakashmaurya/PowerBI-Sales-Analytics-Dashboard"],
+    ["Dashboard File (.pbix)","https://github.com/Premprakashmaurya/PowerBI-Sales-Analytics-Dashboard/blob/main/Sales_Analytics_Dashboard.pbix"]
+  ],
+
+  overview:"An end-to-end Power BI report built from raw sales transactions: cleaned in Power Query, modeled with relationships, measured with DAX and presented through an executive dashboard plus drill-down pages.",
+
+  objectives:[
+    "Create one trusted view of total sales, profit and margin",
+    "Identify top and bottom performing regions and products",
+    "Analyse customer purchasing behaviour",
+    "Enable self-service filtering for managers"
+  ],
+
+  dataset:"Retail sales transaction dataset containing order dates, region, product category, quantity, sales value, profit and customer attributes.",
+
+  approach:[
+    "Imported and profiled raw data in Power Query",
+    "Cleaned nulls, fixed data types and standardised category names",
+    "Built a star-style model with date and dimension tables",
+    "Wrote DAX measures for sales, profit, margin % and growth",
+    "Designed an executive page plus region, product and customer drill-downs",
+    "Added slicers for period, region and category"
+  ],
+
+  shots:[
+    "Executive KPI overview",
+    "Region performance drill-down",
+    "Product & customer analysis"
+  ],
+  screenshots:[
+    {url:"https://raw.githubusercontent.com/Premprakashmaurya/PowerBI-Sales-Analytics-Dashboard/main/Screenshot/Dashboard_Overview.png",title:"Dashboard Overview"},
+    {url:"https://raw.githubusercontent.com/Premprakashmaurya/PowerBI-Sales-Analytics-Dashboard/main/Screenshot/Profit_Insights.png",title:"Profit Insights"},
+    {url:"https://raw.githubusercontent.com/Premprakashmaurya/PowerBI-Sales-Analytics-Dashboard/main/Screenshot/Sales_Analysis.png",title:"Sales Analysis"}
+  ],
+
+  insights:[
+    "A small share of products contributed a disproportionate share of profit",
+    "Certain high-revenue regions carried below-average margins",
+    "Repeat customers delivered materially higher average order value",
+    "Seasonal peaks were concentrated in specific months, informing stock planning"
+  ],
+
+  challenges:"Getting the data model right was harder than the visuals — early versions used a flat table which broke time intelligence. Rebuilding with proper dimension tables fixed both accuracy and performance.",
+
+  learning:"Learned that BI value comes from the model and the measures, not the chart types — and that a dashboard must answer a manager's next question, not just the first one."
+},
+  {
+    cat:"finance", category:"Finance · Financial Modeling",
+    title:"Reliance Industries Financial Model",
+    grad:"linear-gradient(135deg,#1d4ed8,#3b82f6)",
+    img:"https://raw.githubusercontent.com/Premprakashmaurya/Reliance-Financial-Model/main/Screenshots/Ratio_Analysis.png",
+    desc:"Complete 3-statement model (P&L, Balance Sheet, Cash Flow) with DCF valuation, sensitivity analysis and a ratio dashboard, ending in a buy/hold/sell recommendation.",
+    problem:"Is Reliance Industries fairly valued at its current market price, and what assumptions would have to be true to justify it?",
+    tools:["Excel","3-Statement Model","DCF","Ratio Analysis"],
+    links:[["GitHub Repository","https://github.com/Premprakashmaurya/Reliance-Financial-Model"],["Excel Model File","https://docs.google.com/spreadsheets/d/1ZjoreYcF8EvhYWdOcs_nFKJopeBTIcyp/edit?usp=drive_link"]],
+    overview:"A fully linked valuation model built from published annual report data: historical financials, driver-based forecasts, integrated statements, free cash flow, WACC, DCF, sensitivity grid and a ratio dashboard leading to an investment view.",
+    objectives:["Rebuild 5 years of historicals from the annual reports","Forecast revenue and costs from explicit drivers","Link P&L, Balance Sheet and Cash Flow so the model balances","Derive intrinsic value per share via DCF","Stress-test the value with sensitivity analysis"],
+    dataset:"Reliance Industries published annual reports and financial statements, plus market data for share count, price and cost-of-capital inputs.",
+    approach:["Entered and normalised historical financials","Built segment-level revenue drivers and margin assumptions","Constructed integrated three statements with balancing checks","Calculated unlevered free cash flow","Estimated WACC from cost of equity and debt","Discounted cash flows and added terminal value","Built a two-way sensitivity table on WACC and growth","Summarised ratios and reached a recommendation"],
+    shots:["Assumptions & driver sheet","Integrated three statements","DCF valuation and sensitivity grid"],
+    screenshots:[
+      {url:"https://raw.githubusercontent.com/Premprakashmaurya/Reliance-Financial-Model/main/Screenshots/Ratio_Analysis.png",title:"Ratio Analysis"},
+      {url:"https://raw.githubusercontent.com/Premprakashmaurya/Reliance-Financial-Model/main/Screenshots/Balancesheet.png",title:"Balance Sheet"},
+      {url:"https://raw.githubusercontent.com/Premprakashmaurya/Reliance-Financial-Model/main/Screenshots/Income_Statement.png",title:"Income Statement"}
+    ],
+    insights:["Intrinsic value was highly sensitive to terminal growth and WACC — small shifts moved the verdict","Margin expansion contributed more to value than volume growth","Capital allocation and debt structure materially affected equity value","The ratio dashboard flagged improving efficiency alongside heavy capex intensity"],
+    challenges:"Making the balance sheet actually balance across forecast years took the longest — the fix was building explicit check rows and a cash/debt sweep instead of hard-coded plugs.",
+    learning:"A valuation is a set of assumptions, not a number. Documenting each assumption and showing the sensitivity range is what makes the model credible to a reviewer."
+  },
+  {
+    cat:"sql", category:"SQL · Database Design",
+    title:"Library Management System — SQL",
+    grad:"linear-gradient(135deg,#3b82f6,#1d4ed8)",
+    img:"https://raw.githubusercontent.com/Premprakashmaurya/Library-Management-System-SQL/main/Database/ER_Diagram.png",
+    desc:"Full relational database schema with 5 normalized tables and 15+ business queries covering CRUD, joins, subqueries and reporting views — an operational database from scratch.",
+    problem:"A library tracking members, books and issues in spreadsheets could not answer basic operational questions reliably or prevent duplicate/invalid records.",
+    tools:["MySQL","SQL","ERD Design","Normalization"],
+    links:[["GitHub Repository","https://github.com/Premprakashmaurya/Library-Management-System-SQL"],["SQL Scripts","https://github.com/Premprakashmaurya/Library-Management-System-SQL/tree/main/Database"]],
+    overview:"A complete database project: entity-relationship design, normalized schema with keys and constraints, sample data, CRUD operations, and a query library that answers real operational and management questions.",
+    objectives:["Design a normalized schema for library operations","Enforce data integrity with keys and constraints","Support day-to-day CRUD workflows","Answer management questions through queries and views"],
+    dataset:"Purpose-built relational dataset across five entities — members, books, authors/categories, issues and returns — populated with representative sample records.",
+    approach:["Mapped entities and relationships in an ERD","Normalized to remove redundancy","Created tables with primary and foreign keys","Inserted sample data for realistic testing","Wrote CRUD statements for each entity","Built 15+ analytical queries using joins and subqueries","Created reporting views for frequently used outputs"],
+    shots:["Entity relationship diagram","Schema and constraints","Business query outputs"],
+    screenshots:[
+      {url:"https://raw.githubusercontent.com/Premprakashmaurya/Library-Management-System-SQL/main/Screenshot/ER_Diagram.png",title:"ER Diagram"},
+      {url:"https://raw.githubusercontent.com/Premprakashmaurya/Library-Management-System-SQL/main/Screenshot/Database_Schema.png",title:"Database Schema"},
+      {url:"https://raw.githubusercontent.com/Premprakashmaurya/Library-Management-System-SQL/main/Screenshot/Business_Query_result.png",title:"Business Query Results"}
+    ],
+    insights:["Overdue tracking became a single query instead of a manual spreadsheet check","Most-borrowed titles and categories were instantly visible for procurement decisions","Member activity segmentation highlighted inactive accounts","Constraints eliminated the duplicate and orphan records spreadsheets allowed"],
+    challenges:"Deciding how far to normalize — early designs were over-split and made queries painful. I settled on a structure that kept integrity while keeping reporting queries readable.",
+    learning:"Good schema design removes entire categories of reporting problems before they happen, and views are an underrated way to hand non-technical users reliable outputs."
+  },
+  {
+    cat:"excel", category:"Excel · Dashboard Design",
+    title:"Blinkit Sales Intelligence Dashboard",
+    grad:"linear-gradient(135deg,#60a5fa,#2563eb)",
+    img:"https://raw.githubusercontent.com/Premprakashmaurya/Blinkit-Excel-Sales-Dashboard/main/Screenshots/01_Final_Dashboard.png",
+    desc:"Interactive Excel dashboard analysing Blinkit grocery sales using Pivot Tables, charts, slicers and KPI metrics across outlets, categories, ratings and operational trends.",
+    problem:"Quick-commerce sales data was scattered across raw rows with no view of which outlet types, item categories and ratings drove revenue.",
+    tools:["Excel","Power Query","Pivot Tables","Slicers"],
+    links:[["GitHub Repository","https://github.com/Premprakashmaurya/Blinkit-Excel-Sales-Dashboard"],["Dashboard File (.xlsx)","https://github.com/Premprakashmaurya/Blinkit-Excel-Sales-Dashboard/blob/main/Blinkit_Excel_Dashboard.xlsx"]],
+    overview:"A single-screen Excel dashboard built on a cleaned data layer, with pivot-driven visuals and slicers so any stakeholder can filter by outlet type, size, location and item category without touching formulas.",
+    objectives:["Build one KPI view of sales, average sales, item count and rating","Compare outlet types, sizes and locations","Analyse performance by item category and fat content","Make the whole view interactive through slicers"],
+    dataset:"Blinkit grocery sales dataset with item identifiers, item type, fat content, outlet type, outlet size, establishment year, location tier, item visibility, sales and customer ratings.",
+    approach:["Cleaned and standardised categories in Power Query","Created a structured table as the single data layer","Built pivot tables for each analytical question","Designed KPI cards for headline metrics","Added charts for category, outlet and trend views","Connected slicers to all pivots for unified filtering","Applied consistent formatting and layout"],
+    shots:["KPI header and headline metrics","Outlet type and size comparison","Item category performance view"],
+    screenshots:[
+      {url:"https://raw.githubusercontent.com/Premprakashmaurya/Blinkit-Excel-Sales-Dashboard/main/Screenshots/01_Final_Dashboard.png",title:"Final Dashboard"},
+      {url:"https://raw.githubusercontent.com/Premprakashmaurya/Blinkit-Excel-Sales-Dashboard/main/Screenshots/02_Pivot_Analysis.png",title:"Pivot Analysis"},
+      {url:"https://raw.githubusercontent.com/Premprakashmaurya/Blinkit-Excel-Sales-Dashboard/main/Screenshots/3_Data_Cleaning.png",title:"Data Cleaning"}
+    ],
+    insights:["A handful of item categories accounted for the bulk of total sales","Medium-sized outlets in specific tier locations outperformed on average sales","Customer ratings clustered tightly, so ratings alone did not explain sales differences","Establishment year showed a visible maturity effect on outlet performance"],
+    challenges:"Keeping the dashboard fast and clean while every visual stayed connected — solved by one cleaned source table, consistent pivot cache, and removing redundant charts.",
+    learning:"Excel is still enough for genuinely professional BI when the data layer is disciplined; layout and restraint matter more than adding more charts."
+  }
+];
+
+ const CASES = [
+  {
+    title:"Blinkit Unit Economics — Is Quick Commerce Profitable?",
+    desc:"Independent business case study analyzing Blinkit's unit economics, contribution margin, customer acquisition cost (CAC), lifetime value (LTV), operational efficiency, and long-term profitability using publicly available financial reports, investor presentations, and industry data."
+  }
+];
+
+ const EXPERIENCE = [
+  {
+    co:"Estate Plus CRM",
+    role:"Business Development & CRM Intern",
+    date:"June–July",
+    industry:"Real Estate Technology · CRM SaaS",
+    company:"Estate Plus CRM develops customer relationship management software for real estate agencies, brokers and developers to manage leads, site visits, inventory and sales processes.",
+
+    responsibilities:[
+      "Generated B2B leads through cold calling and customer outreach",
+      "Delivered CRM product demonstrations to prospective clients",
+      "Collected customer requirements and documented business needs",
+      "Conducted competitor and market research to support business development"
+    ],
+
+    daily:"Contacted prospective real estate businesses through outbound calls, scheduled product demonstrations, understood client requirements, updated CRM records, followed up with interested leads and researched competitor CRM platforms to support the sales team.",
+
+    tools:["CRM Software","Excel","Cold Calling","Lead Generation"],
+
+    skills:[
+      "Business Development",
+      "CRM Management",
+      "Lead Generation",
+      "Market Research",
+      "Customer Communication"
+    ],
+
+    impact:"Contributed to lead generation efforts by identifying potential clients, maintaining accurate CRM records and supporting the sales team with customer insights and competitor research.",
+
+    learning:"Developed practical experience in CRM-based sales processes, customer relationship management and understanding client requirements through direct business interactions."
+  },
+
+  {
+    co:"INSANSA Techknowledge (Gyapak)",
+    role:"Marketing & Outreach Intern",
+    date:"June–July",
+    industry:"EdTech · Technology Services",
+    company:"INSANSA Techknowledge developed Gyapak, an EdTech platform that provides students with learning resources, career guidance and competitive examination information.",
+
+    responsibilities:[
+      "Promoted the Gyapak platform through field marketing activities",
+      "Visited coaching institutes and libraries for partnership outreach",
+      "Collected student and institutional feedback through direct interaction",
+      "Supported market research and lead generation initiatives"
+    ],
+
+    daily:"Visited coaching institutes, libraries and educational organizations to introduce the Gyapak platform, interacted with students and educators, collected user feedback, generated leads and supported onboarding activities.",
+
+    tools:["Excel","Market Research","Field Marketing","Lead Generation"],
+
+    skills:[
+      "Market Research",
+      "Field Marketing",
+      "Lead Generation",
+      "Customer Interaction",
+      "Communication"
+    ],
+
+    impact:"Helped expand awareness of the Gyapak platform by generating qualified leads, gathering market feedback and strengthening outreach efforts across educational institutions.",
+
+    learning:"Learned how marketing campaigns, customer feedback and field research contribute to product growth and business development in an early-stage EdTech company."
+  }
+];
+
+/* Certificate image host — GitHub raw (all proofs live in /Images of the GitHub Pages repo) */
+const IMG = "https://raw.githubusercontent.com/Premprakashmaurya/Premprakashmaurya.github.io/main/Images/";
+
+const CERTS = [
+  { icon:"🧾", img:IMG+"Accountant%20Fundamental%20Training%20(AFT)%20Program.png",
+    name:"Accountant Fundamental Training (AFT) Program", org:"AFT Program", date:"Completed · 2024", cred:"AFT Program Certificate", status:"done",
+    topics:["Accounting fundamentals","Journal & ledger entries","Trial balance","Final accounts","Taxation basics","Business documentation"],
+    skills:["Reading and preparing books of accounts","Understanding statement linkages","Accounting accuracy discipline"],
+    applied:"Underpins how I read published financial statements in my Reliance valuation model and ratio analysis work.",
+    note:"The accounting grounding that makes my financial modeling defensible rather than purely mechanical." },
+
+  { icon:"🗄️", img:IMG+"SQL%20and%20Relational%20Databases%20101.png",
+    name:"SQL and Relational Databases 101", org:"IBM (Cognitive Class)", date:"Completed · 2025", cred:"IBM SQL & Relational Databases 101", status:"done",
+    topics:["Relational model & schemas","SELECT and filtering","JOINs across tables","Aggregate functions","Sub-queries","Database design basics"],
+    skills:["Querying business data directly","Designing normalized tables","Validating data before reporting"],
+    applied:"Applied end-to-end in the Library Management System project — 5 normalized tables and 15+ business queries.",
+    note:"My formal SQL credential, earned alongside building a real database from scratch." },
+
+  { icon:"✉️", img:IMG+"Email%20Etiquette.png",
+    name:"Email Etiquette", org:"TCS iON Career Edge", date:"Completed · 2024", cred:"TCS iON Certificate", status:"done",
+    topics:["Professional email structure","Tone and clarity","Subject line discipline","Cc/Bcc conventions","Follow-up etiquette","Business writing"],
+    skills:["Clear stakeholder communication","Concise reporting emails","Professional correspondence"],
+    applied:"Used daily during both internships when circulating performance trackers and management summaries.",
+    note:"Analysis only creates value if it is communicated cleanly — this is the discipline behind that." },
+
+  { icon:"🎤", img:IMG+"Presentation%20Skills.png",
+    name:"Presentation Skills", org:"TCS iON Career Edge", date:"Completed · 2024", cred:"TCS iON Certificate", status:"done",
+    topics:["Structuring a business deck","Data storytelling","Slide design principles","Audience engagement","Handling questions","Delivery confidence"],
+    skills:["Turning analysis into a narrative","Executive-ready slide design","Confident stakeholder delivery"],
+    applied:"Applied while presenting competitive research and strategy documentation at INSANSA Techknowledge (Gyapak).",
+    note:"How I make sure a dashboard or model actually lands in the room where the decision is made." },
+
+  { icon:"📒", name:"Tally ERP — Accounting & Finance", org:"Certified Training Programme", date:"Completed · 2024", cred:"Tally ERP Certificate", status:"done",
+    topics:["Ledger & voucher management","GST configuration and returns","Payroll processing","Inventory basics","Bank reconciliation","Financial statement generation"],
+    skills:["Practical bookkeeping","GST compliance workflow","Reading statements from source records"],
+    applied:"Used in accounting coursework and reconciliation exercises, and it underpins how I read company financial statements in my valuation work.",
+    note:"Gives me the accounting side of finance, not just the analytical side — useful in roles that touch real books and compliance." },
+   
+  { icon:"🤖", name:"Anthropic Claude AI — Practical Applications", org:"Anthropic", date:"Completed · 2025", cred:"AI-Augmented Business Analysis", status:"done",
+    topics:["Effective prompting","Document and data analysis with AI","Research summarisation","Drafting and review workflows","Responsible AI use"],
+    skills:["Faster research and synthesis","AI-assisted quality checks on analysis","Clearer written deliverables"],
+    applied:"Used to accelerate market research, review model logic, and structure documentation across my projects and internship reporting.",
+    note:"AI is now part of how I work — it speeds up research and review without replacing the financial judgement." },
+    
+ {
+  icon:"📊",
+  name:"Business Intelligence Tools: Power BI & Tableau",
+  org:"Yuvion EdTech Private Limited",
+
+  img:"https://raw.githubusercontent.com/Premprakashmaurya/Premprakashmaurya.github.io/main/Images/Business%20Intelligence%20Tools%20-%20PowerBI%20%26%20Tableau.png",
+  date:"Completed · June 2026",
+  cred:"Certificate No. YUVION/UIM/BI/2026/14",
+  status:"done",
+
+  topics:[
+    "Power BI dashboard development",
+    "Tableau data visualization",
+    "Data preparation & transformation",
+    "Interactive dashboards & reporting",
+    "Business intelligence fundamentals"
+  ],
+
+  skills:[
+    "Power BI",
+    "Tableau",
+    "Data Visualization",
+    "Dashboard Design",
+    "Business Intelligence"
+  ],
+
+  applied:"Applied these skills in developing interactive Power BI Sales Analytics Dashboard, Excel analytics projects and business reporting dashboards while strengthening data visualization techniques in both Power BI and Tableau.",
+
+  note:"Completed a 60-day Business Intelligence training program covering Power BI and Tableau, with a focus on transforming raw data into interactive dashboards and business insights."
+},
+{
+  icon:"📢",
+  name:"Digital Marketing Certification",
+  org:"HubSpot Academy",
+
+  img:"https://raw.githubusercontent.com/Premprakashmaurya/Premprakashmaurya.github.io/main/Images/Digital%20Marketing%20Hubspot%20Certificate.png",
+
+  date:"Completed · June 2026",
+  cred:"Certificate Code: 89e06745d7ce4cf79b16b3a9a9d6754e",
+  status:"done",
+
+  topics:[
+    "Inbound Marketing",
+    "SEO Fundamentals",
+    "Content Marketing",
+    "Social Media Marketing",
+    "Digital Advertising",
+    "Marketing Analytics"
+  ],
+
+  skills:[
+    "Search Engine Optimization (SEO)",
+    "Content Marketing",
+    "Social Media Strategy",
+    "Digital Advertising",
+    "Marketing Analytics"
+  ],
+
+  applied:"Applied digital marketing concepts during my EdTech internship by supporting platform promotion, student outreach, lead generation, market research and customer engagement activities.",
+
+  note:"Completed HubSpot Academy's Digital Marketing Certification covering inbound marketing, SEO, content strategy, social media, digital advertising and performance measurement."
+},
+];
+
+/* attach certificate proof images to existing credentials by name keyword */
+const CERT_IMG = { "Tally":IMG+"Tally%20Prime%20Course.png", "Claude":IMG+"Anthropic%20Claude.png" };
+CERTS.forEach(c=>{ if(c.img) return; for(const k in CERT_IMG) if(c.name.includes(k)) c.img = CERT_IMG[k]; });
+
+/* ================= INTERNSHIP CERTIFICATIONS ================= */
+ const INTERN_CERTS = [
+  {
+    img:IMG+"EstatePlus%20Internship%20Completion%20Certification.png",
+    co:"Estate Plus CRM",
+    logo:"EP",
+    name:"Internship Completion Certificate — Estate Plus CRM",
+    role:"Business Development & CRM Intern",
+    duration:"June–July 2026",
+    industry:"Real Estate Technology · CRM SaaS",
+    cred:"Estate Plus CRM Internship Completion Certificate",
+
+    skills:[
+      "CRM Management",
+      "Lead Generation",
+      "Cold Calling",
+      "Product Demonstration",
+      "Market Research",
+      "Customer Communication"
+    ],
+ summary:"Completed a Business Development & CRM internship at Estate Plus CRM, where responsibilities included lead generation through cold calling, conducting CRM product demonstrations, understanding customer requirements, maintaining CRM records, following up with prospective clients and supporting competitor and market research. The certificate verifies successful completion of the internship."
+  },
+
+  {
+    img:IMG+"Insansa_Techknowledge%20Internship_Certification.png",
+    co:"INSANSA Techknowledge (Gyapak)",
+    logo:"IT",
+    name:"Internship Completion Certificate — INSANSA Techknowledge",
+    role:"Marketing & Outreach Intern",
+    duration:"June–July 2026",
+    industry:"EdTech · Technology Services",
+    cred:"INSANSA Techknowledge Internship Completion Certificate",
+
+    skills:[
+      "Field Marketing",
+      "Lead Generation",
+      "Market Research",
+      "Educational Outreach",
+      "Customer Interaction",
+      "Communication"
+    ],
+
+    summary:"Completed a Marketing & Outreach internship at INSANSA Techknowledge (Gyapak), where responsibilities included promoting the Gyapak platform through field marketing, visiting coaching institutes and libraries, interacting with students and educators, generating leads, collecting market feedback and supporting onboarding activities. The certificate confirms successful completion of the internship."
+  }
+];
+
+const LEARNING = [
+  ["SQL — Intermediate","Complex queries, stored procedures, database optimisation"],
+  ["Power BI PL-300","Advanced DAX, data modeling, Microsoft certification"],
+  ["Financial Modeling","3-statement models, DCF, LBO — NSE Academy"],
+  ["Python for Analytics","pandas, matplotlib, basic EDA and visualization"],
+  ["Google Analytics 4","GA4 certification — Google Skillshop (in progress)"]
+];
+
+const ACHIEVEMENTS = [
+  "Built and published 4 complete analytics and finance projects with full documentation on GitHub",
+  "Completed two analyst internships across CRM/real-estate technology and EdTech while pursuing an MBA",
+  "Earned certifications in  Tally ERP,and Anthropic Claude AI practical applications",
+  "Self-taught SQL, Power BI and Python alongside a full-time MBA programme",
+  "Built a 3-statement model of Reliance Industries from published annual reports",
+  "Currently pursuing Microsoft PL-300, NSE Academy Financial Modeling,and GA4  "
+];
+
+const CONTACTS = [
+  { icon:"📧", label:"Email", value:PROFILE.email, href:"mailto:"+PROFILE.email },
+  { icon:"💼", label:"LinkedIn", value:"prem-prakash-maurya-finance", href:PROFILE.linkedin },
+  { icon:"💻", label:"GitHub", value:"github.com/Premprakashmaurya", href:PROFILE.github },
+  { icon:"📍", label:"Location", value:PROFILE.location+" · Open to relocation" },
+  { icon:"🟢", label:"Availability", value:"Available immediately · Full-time, remote or hybrid" },
+  { icon:"🎯", label:"Preferred Roles", value:"Finance Analyst · Business Analyst · Digital Marketing · Marketing Analyst" },
+  { icon:"⏱️", label:"Response Time", value:"Usually within 24 hours on weekdays" }
+];
+
+/* =====================================================================
+   RENDER
+   ===================================================================== */
+const $ = (s,r=document)=>r.querySelector(s);
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const tags = a => `<div class="tags">${a.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>`;
+const list = a => `<ul class="list">${a.map(t=>`<li>${esc(t)}</li>`).join("")}</ul>`;
+
+/* nav */
+$("#navLinks").innerHTML = NAV.map(([l,i])=>`<a href="#${i}" data-nav="${i}">${l}</a>`).join("");
+$("#mobileMenu").innerHTML = NAV.map(([l,i])=>`<a href="#${i}">${l}</a>`).join("")
+  + `<a href="#contact" style="color:var(--blue-3);font-weight:600">Hire Me →</a>`;
+
+/* hero */
+$("#roleRow").innerHTML = ROLES.map(r=>`<span class="tag">${r}</span>`).join("");
+$("#statsRow").innerHTML = STATS.map(([n,l])=>`<div class="stat"><b class="grad-text" data-count="${n}">0</b><small>${l}</small></div>`).join("");
+$("#marquee").innerHTML = [0,1].map(()=>ROLES.map(r=>`<span>Open to → ${r}<span class="dot"></span></span>`).join("")).join("");
+
+/* about */
+$("#aboutGrid").innerHTML = `
+  <div class="glass-strong pad-lg reveal">
+    ${ABOUT.slice(0,4).map(a=>`<div style="margin-bottom:22px"><div class="eyebrow">${a.h}</div><p class="body-text" style="margin-top:7px">${esc(a.p)}</p></div>`).join("")}
+    <div style="display:flex;flex-direction:column;gap:12px;margin-top:8px">
+      ${EDU.map(e=>`<div class="glass pad" style="display:flex;gap:14px;padding:16px"><span style="font-size:22px">${e.icon}</span><div><div class="card-title" style="font-size:14.5px">${esc(e.t)}</div><div style="color:var(--faint);font-size:12.5px;margin-top:3px">${esc(e.s)}</div></div></div>`).join("")}
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:16px">
+    ${ABOUT.slice(4,8).map(a=>`<div class="glass pad lift reveal"><div class="eyebrow">${a.h}</div><p class="body-text" style="margin-top:7px">${esc(a.p)}</p></div>`).join("")}
+  </div>`;
+$("#aboutExtra").innerHTML = ABOUT.slice(8).map(a=>`<div class="glass pad lift"><div class="eyebrow">${a.h}</div><p class="body-text" style="margin-top:7px">${esc(a.p)}</p></div>`).join("");
+
+/* skills accordions */
+$("#skillsGrid").innerHTML = SKILLS.map((s,i)=>`
+  <div class="acc reveal" data-acc="${i}">
+    <button class="acc-head" aria-expanded="false">
+      <span class="acc-icon">${s.icon}</span>
+      <span class="acc-meta"><strong>${esc(s.name)}</strong><small>${esc(s.tagline)}</small></span>
+      <span class="acc-plus">+</span>
+    </button>
+    <div class="acc-body"><div class="acc-body-inner">
+      <p class="body-text">${esc(s.overview)}</p>
+      <div class="block"><h5>Current Level — ${esc(s.lvl)}</h5><div class="level"><i data-w="${s.level}%"></i></div></div>
+      <div class="block"><h5>Where I Learned It</h5><p class="body-text">${esc(s.learned)}</p></div>
+      <div class="block"><h5>Topics Covered</h5>${tags(s.topics)}</div>
+      <div class="block"><h5>Real Projects</h5><p class="body-text">${esc(s.projects)}</p></div>
+      <div class="block"><h5>Business Applications</h5><p class="body-text">${esc(s.business)}</p></div>
+      <div class="block"><h5>Future Learning</h5><p class="body-text">${esc(s.future)}</p></div>
+    </div></div>
+  </div>`).join("");
+
+document.querySelectorAll(".acc").forEach(acc=>{
+  const head = $(".acc-head",acc), body = $(".acc-body",acc);
+  head.addEventListener("click",()=>{
+    const open = acc.classList.toggle("open");
+    head.setAttribute("aria-expanded",open);
+    body.style.maxHeight = open ? body.scrollHeight+"px" : "0px";
+    if(open) requestAnimationFrame(()=>body.querySelectorAll("i[data-w]").forEach(i=>i.style.width=i.dataset.w));
+  });
+});
+window.addEventListener("resize",()=>{
+  document.querySelectorAll(".acc.open .acc-body").forEach(b=>b.style.maxHeight=b.scrollHeight+"px");
+});
+
+ /* projects */
+const FILTERS = [["all","All"],["powerbi","Power BI"],["finance","Finance"],["sql","SQL"],["excel","Excel"]];
+$("#filters").innerHTML = FILTERS.map(([id,l],i)=>`<button class="filter${i===0?" active":""}" data-f="${id}">${l}</button>`).join("");
+
+function projCard(p,i){
+  return `<article class="glass-strong pad lift reveal in">
+
+    <div class="shot zoom" data-gal="${i}" title="Open dashboard preview" style="overflow:hidden;border-radius:18px;background:#111827">
+
+      ${
+        p.img
+        ? `<img src="${p.img}" alt="${esc(p.title)}"
+            style="width:100%;height:100%;object-fit:cover;display:block;transition:.35s ease;">`
+        : `<div style="width:100%;height:100%;background:${p.grad};display:flex;align-items:center;justify-content:center;">
+            <div class="label">
+              <small>${esc(p.category)}</small>
+              <b style="margin-top:6px">${esc(p.title)}</b>
+              <small style="display:block;margin-top:8px;letter-spacing:.05em;text-transform:none">
+                🔍 Dashboard Preview
+              </small>
+            </div>
+          </div>`
+      }
+
+    </div>
+
+    <div style="margin-top:18px">
+      <div class="eyebrow">${esc(p.category)}</div>
+
+      <h3 class="card-title" style="margin-top:8px;font-size:19px">
+        ${esc(p.title)}
+      </h3>
+
+      <p class="body-text" style="margin-top:10px">
+        ${esc(p.desc)}
+      </p>
+
+      <div class="block">
+        <h5>Business Problem</h5>
+        <p class="body-text">${esc(p.problem)}</p>
+      </div>
+
+      <div class="block">
+        <h5>Business Solution</h5>
+        <p class="body-text">${esc(p.overview)}</p>
+      </div>
+
+      <div class="block">
+        <h5>Key Insights</h5>
+        ${list(p.insights.slice(0,3))}
+      </div>
+
+      <div class="block">
+        <h5>Technologies</h5>
+        ${tags(p.tools)}
+      </div>
+
+      <div class="proj-foot">
+        <a class="btn btn-ghost btn-sm" href="${p.links[0][1]}" target="_blank" rel="noopener">
+          GitHub ↗
+        </a>
+ 
+        <button class="btn btn-ghost btn-sm" data-gal="${i}">
+          View Screenshot
+        </button>
+      </div>
+
+    </div>
+
+  </article>`;
+}
+
+function renderProjects(f="all"){
+  $("#projGrid").innerHTML = PROJECTS
+    .map((p,i)=>[p,i])
+    .filter(([p])=>f==="all"||p.cat===f)
+    .map(([p,i])=>projCard(p,i))
+    .join("");
+}
+
+renderProjects();
+
+$("#filters").addEventListener("click",e=>{
+  const b = e.target.closest(".filter");
+  if(!b) return;
+
+  document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));
+  b.classList.add("active");
+  renderProjects(b.dataset.f);
+});
+
+$("#caseGrid").innerHTML = CASES.map(c=>`
+  <div class="glass pad lift reveal">
+    <div class="eyebrow">Case Study</div>
+    <h4 class="card-title" style="margin-top:8px">${esc(c.title)}</h4>
+    <p class="body-text" style="margin-top:10px">${esc(c.desc)}</p>
+  </div>
+`).join("");
+
+/* experience */
+const initials = s => s.replace(/[^A-Za-z ]/g,"").trim().split(/\s+/).slice(0,2).map(w=>w[0]).join("").toUpperCase();
+$("#expList").innerHTML = EXPERIENCE.map((x,i)=>`
+  <div class="tl-item glass-strong pad-lg reveal" data-exp="${i}">
+    <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center">
+      <div style="display:flex;gap:14px;align-items:center;min-width:0">
+        <span class="co-logo">${initials(x.co)}</span>
+        <div><h3 class="card-title" style="font-size:20px">${esc(x.co)}</h3>
+          <div style="color:var(--blue-3);font-size:13.5px;font-weight:600;margin-top:4px">${esc(x.role)}</div></div>
+      </div>
+      <span class="tag">${esc(x.date)}</span>
+    </div>
+    <div class="kv">
+      <div><b>Company Overview</b><span>${esc(x.company)}</span></div>
+      <div><b>Industry</b><span>${esc(x.industry)}</span></div>
+      <div><b>Duration</b><span>${esc(x.date)}</span></div>
+      <div><b>Role</b><span>${esc(x.role)}</span></div>
+    </div>
+    <div class="block"><h5>Responsibilities</h5>${list(x.responsibilities)}</div>
+    <div class="exp-more">
+      <div class="block"><h5>Daily Work</h5><p class="body-text">${esc(x.daily)}</p></div>
+      <div class="block"><h5>Technologies Used</h5>${tags(x.tools)}</div>
+      <div class="block"><h5>Skills Learned</h5>${tags(x.skills)}</div>
+      <div class="block"><h5>Achievements &amp; Business Impact</h5><p class="body-text">${esc(x.impact)}</p></div>
+      <div class="block"><h5>Learning Outcome</h5><p class="body-text">${esc(x.learning)}</p></div>
+    </div>
+    <div class="proj-foot"><button class="btn btn-ghost btn-sm" data-expmore="${i}">Show full details ↓</button></div>
+  </div>`).join("");
+
+document.addEventListener("click",e=>{
+  const b = e.target.closest("[data-expmore]"); if(!b) return;
+  const card = b.closest("[data-exp]"), more = $(".exp-more",card);
+  const open = more.style.maxHeight && more.style.maxHeight !== "0px";
+  more.style.maxHeight = open ? "0px" : more.scrollHeight+"px";
+  b.textContent = open ? "Show full details ↓" : "Hide details ↑";
+});
+
+/* certifications */
+const certThumb = c => c.img
+  ? `<div class="cert-thumb"><img src="${c.img}" alt="${esc(c.name)} certificate" loading="lazy" decoding="async" /><span class="peek">🔍 Click to view certificate</span></div>`
+  : `<div class="cert-thumb"><div class="cert-fallback">${c.icon}</div><span class="peek">Certificate details</span></div>`;
+
+$("#certGrid").innerHTML = CERTS.map((c,i)=>`
+  <div class="glass-strong pad lift reveal cert-card" data-cert="${i}">
+    ${certThumb(c)}
+    <div style="display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:16px">
+      <span class="eyebrow">${esc(c.org)}</span>
+      <span class="${c.status==="done"?"badge-done":"badge-wip"}">${c.status==="done"?"COMPLETED":"IN PROGRESS"}</span>
+    </div>
+    <h4 class="card-title" style="margin-top:8px">${esc(c.name)}</h4>
+    <div class="kv">
+      <div><b>Completion</b><span>${esc(c.date)}</span></div>
+      <div><b>Credential</b><span>${esc(c.cred)}</span></div>
+    </div>
+    <div class="block"><h5>Topics Covered</h5>${tags(c.topics)}</div>
+    <div class="block"><h5>Skills Learned</h5>${list(c.skills)}</div>
+    <div class="block"><h5>Where I Applied It</h5><p class="body-text">${esc(c.applied)}</p></div>
+    <p class="body-text" style="margin-top:14px;font-style:italic">${esc(c.note)}</p>
+    <div class="proj-foot"><button class="btn btn-primary btn-sm" data-cert="${i}">View Certificate</button></div>
+  </div>`).join("");
+
+/* internship certifications */
+$("#internCertGrid").innerHTML = INTERN_CERTS.map((c,i)=>`
+  <div class="glass-strong pad lift reveal cert-card" data-icert="${i}">
+    <div class="cert-thumb" style="height:230px"><img src="${c.img}" alt="${esc(c.name)}" loading="lazy" decoding="async" /><span class="peek">🔍 Click to view full certificate</span></div>
+    <div style="display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:16px">
+      <span class="eyebrow">${esc(c.industry)}</span>
+      <span class="badge-done">VERIFIED</span>
+    </div>
+    <h4 class="card-title" style="margin-top:8px">${esc(c.co)}</h4>
+    <div class="kv">
+      <div><b>Internship Role</b><span>${esc(c.role)}</span></div>
+      <div><b>Duration</b><span>${esc(c.duration)}</span></div>
+      <div><b>Credential</b><span>${esc(c.cred)}</span></div>
+    </div>
+    <div class="block"><h5>Skills Gained</h5>${tags(c.skills)}</div>
+    <div class="block"><h5>Internship Summary</h5><p class="body-text">${esc(c.summary)}</p></div>
+    <div class="proj-foot"><button class="btn btn-primary btn-sm" data-icert="${i}">View Certificate</button></div>
+  </div>`).join("");
+$("#learnGrid").innerHTML = LEARNING.map(([h,p])=>`<div class="glass pad lift reveal"><div class="card-title" style="font-size:15px">${esc(h)}</div><p class="body-text" style="margin-top:8px">${esc(p)}</p></div>`).join("");
+
+/* resume */
+$("#resumeWrap").innerHTML = `
+  <div class="glass-strong pad-lg reveal" style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin-bottom:20px">
+    <div><h3 class="card-title" style="font-size:20px">Prem Prakash Maurya — Finance &amp; Analytics</h3>
+      <p class="body-text" style="margin-top:6px">MBA Finance &amp; Marketing · Prayagraj, India · ${esc(PROFILE.email)}</p></div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px">
+      <a class="btn btn-primary btn-sm" href="${PROFILE.resume}" download="Prem-Prakash-Maurya-Resume.png" target="_blank" rel="noopener">Download Resume</a>
+      <button class="btn btn-ghost btn-sm" id="printBtn">Print Resume</button>
+      <button class="btn btn-ghost btn-sm" data-img="${PROFILE.resume}" data-imgtitle="Prem Prakash Maurya — Resume">View Full Size</button>
+      <a class="btn btn-ghost btn-sm" href="mailto:${PROFILE.email}">Email Me</a>
+      <a class="btn btn-ghost btn-sm" href="${PROFILE.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="grid-2 reveal" style="align-items:start;margin-bottom:20px">
+    <div class="resume-preview" data-img="${PROFILE.resume}" data-imgtitle="Prem Prakash Maurya — Resume">
+      <img src="${PROFILE.resume}" alt="Prem Prakash Maurya resume preview" loading="lazy" decoding="async" />
+      <span class="peek">🔍 Click to open the full resume inside this site</span>
+    </div>
+    <div class="glass pad-lg">
+      <div class="eyebrow">Resume Snapshot</div>
+      <h4 class="card-title" style="margin-top:8px;font-size:19px">One page, the whole picture</h4>
+      <p class="body-text" style="margin-top:10px">Education, internship experience, analytics and finance projects, tooling and certifications — formatted for recruiters screening for Finance Analyst, Business Analyst and Marketing Analyst roles.</p>
+      ${list(["MBA Finance & Marketing (2025–2027) + B.Sc. Mathematics & Chemistry","Two analyst internships across CRM SaaS and EdTech","Four documented portfolio projects on GitHub","Excel, SQL, Power BI, Python, Tally and financial modeling"])}
+    </div> 
+  </div>
+  <div class="grid-2" style="align-items:start">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div class="glass pad-lg reveal"><h4 class="card-title">Education</h4>
+        ${EDU.map(e=>`<div style="margin-top:14px"><div style="font-weight:600;font-size:14.5px">${esc(e.t)}</div><div style="color:var(--faint);font-size:12.5px;margin-top:3px">${esc(e.s)}</div></div>`).join("")}
+      </div>
+      <div class="glass pad-lg reveal"><h4 class="card-title">Experience</h4>
+        ${EXPERIENCE.map(x=>`<div style="margin-top:16px"><div style="font-weight:600;font-size:14.5px">${esc(x.role)} — ${esc(x.co)}</div>
+          <div style="color:var(--faint);font-size:12.5px;margin-top:3px">${esc(x.date)} · ${esc(x.industry)}</div>
+          ${list(x.responsibilities.slice(0,3))}</div>`).join("")}
+      </div>
+       <div class="glass pad-lg reveal"><h4 class="card-title">Certifications</h4>${list(CERTS.map(c=>c.name+" — "+c.org+" ("+c.date+")"))}</div>
+    
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div class="glass pad-lg reveal"><h4 class="card-title">Projects</h4>
+        ${PROJECTS.map(p=>`<div style="margin-top:14px"><div style="font-weight:600;font-size:14.5px">${esc(p.title)}</div>
+          <div style="color:var(--faint);font-size:12.5px;margin-top:3px">${esc(p.category)}</div>
+          <p class="body-text" style="margin-top:6px">${esc(p.desc)}</p></div>`).join("")}
+      </div>
+      <div class="glass pad-lg reveal"><h4 class="card-title">Skills</h4>
+        ${SKILLS.map(s=>`<div style="margin-top:12px"><div style="display:flex;justify-content:space-between;font-size:13.5px"><span style="font-weight:600">${esc(s.name)}</span><span style="color:var(--faint)">${esc(s.lvl)}</span></div><div class="level"><i data-w="${s.level}%"></i></div></div>`).join("")}
+      </div>
+      </div>
+  </div>
+
+  <div class="glass-strong cta-band reveal" style="margin-top:24px">
+    <div style="max-width:56ch">
+      <div class="chip" style="margin-bottom:12px"><span class="dot pulse" style="background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.16)"></span> Open to opportunities</div>
+      <h3 class="card-title" style="font-size:clamp(1.3rem,2.6vw,1.75rem)">Looking for Finance Analyst / Business Analyst / Digital Marketing opportunities</h3>
+      <p class="body-text" style="margin-top:10px">Available immediately across India — full-time, remote or hybrid. Typical response time under 24 hours.</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:12px">
+      <a class="btn btn-ghost" href="#contact">Contact Me</a>
+    </div>
+  </div>`;
+$("#printBtn").addEventListener("click",()=>window.print());
+
+/* contact */
+$("#contactCards").innerHTML = CONTACTS.map(c=>{
+  const tag = c.href ? "a" : "div";
+  const attrs = c.href ? `href="${c.href}"${c.href.startsWith("http")?' target="_blank" rel="noopener"':""}` : "";
+  return `<${tag} class="glass pad lift reveal" ${attrs} style="display:flex;gap:16px;align-items:center;padding:20px">
+    <span style="width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:20px;background:rgba(59,130,246,.14);border:1px solid rgba(96,165,250,.24);flex:0 0 auto">${c.icon}</span>
+    <span style="min-width:0"><span style="display:block;font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)">${c.label}</span>
+    <span style="display:block;font-size:14px;font-weight:600;margin-top:3px">${esc(c.value)}</span></span>
+  </${tag}>`;
+}).join("");
+
+$("#contactForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const f = e.target, b = f.querySelector("button[type=submit]");
+  const name = f.querySelector("input[type=text]").value;
+  const email = f.querySelector("input[type=email]").value;
+  const subject = f.querySelector("select").value;
+  const msg = f.querySelector("textarea").value;
+  window.location.href = `mailto:${PROFILE.email}?subject=${encodeURIComponent(subject+" — "+name)}&body=${encodeURIComponent(msg+"\n\n— "+name+" ("+email+")")}`;
+  b.textContent = "✅ Opening your email app…";
+  setTimeout(()=>{b.textContent="Send Message →";f.reset();},3200);
+});
+
+/* ================= MODAL (project details) ================= */
+const modal = $("#modal"), modalCard = $("#modalCard");
+function openProject(i){
+  const p = PROJECTS[i];
+  modalCard.innerHTML = `
+    <button class="modal-close" data-close>✕</button>
+    <div class="eyebrow">${esc(p.category)}</div>
+    <h3 style="margin-top:8px">${esc(p.title)}</h3>
+    <div class="shot" style="background:${p.grad};margin-top:20px"><div class="label"><b>${esc(p.title)}</b><small>${esc(p.category)}</small></div></div>
+    <div class="block"><h5>Overview</h5><p class="body-text">${esc(p.overview)}</p></div>
+    <div class="block"><h5>Business Problem</h5><p class="body-text">${esc(p.problem)}</p></div>
+    <div class="block"><h5>Objectives</h5>${list(p.objectives)}</div>
+    <div class="block"><h5>Dataset</h5><p class="body-text">${esc(p.dataset)}</p></div>
+    <div class="block"><h5>Approach</h5>${list(p.approach)}</div>
+    <div class="block"><h5>Screenshots</h5>
+      <div class="grid-3" style="gap:12px">${p.shots.map(s=>`<div class="shot" style="aspect-ratio:4/3;background:${p.grad};opacity:.9"><div class="label"><small>${esc(s)}</small></div></div>`).join("")}</div>
+    </div>
+    <div class="block"><h5>Tools Used</h5>${tags(p.tools)}</div>
+    <div class="block"><h5>Business Insights</h5>${list(p.insights)}</div>
+    <div class="block"><h5>Challenges</h5><p class="body-text">${esc(p.challenges)}</p></div>
+    <div class="block"><h5>Learning Outcome</h5><p class="body-text">${esc(p.learning)}</p></div>
+    <div class="proj-foot">${p.links.map(([l,h])=>`<a class="btn ${l.includes("GitHub")?"btn-primary":"btn-ghost"} btn-sm" href="${h}" target="_blank" rel="noopener">${l} ↗</a>`).join("")}
+      <button class="btn btn-ghost btn-sm" data-close>Close</button></div>`;
+  modal.classList.add("open");
+  document.body.style.overflow="hidden";
+  modalCard.scrollIntoView({block:"start"});
+}
+function openCert(i){
+  const c = CERTS[i];
+  modalCard.innerHTML = `
+    <button class="modal-close" data-close>✕</button>
+    <div class="eyebrow">${esc(c.org)}</div>
+    <h3 style="margin-top:8px">${esc(c.name)}</h3>
+    ${c.img?`<div class="modal-shot" data-img="${c.img}" data-imgtitle="${esc(c.name)}"><img src="${c.img}" alt="${esc(c.name)} certificate" /><span class="peek">🔍 Click for full size</span></div>`:""}
+    <div class="kv">
+      <div><b>Issuing Organisation</b><span>${esc(c.org)}</span></div>
+      <div><b>Completion Date</b><span>${esc(c.date)}</span></div>
+      <div><b>Credential ID</b><span>${esc(c.cred)}</span></div>
+      <div><b>Status</b><span>${c.status==="done"?"Completed":"In Progress"}</span></div>
+    </div>
+    <div class="block"><h5>Topics Covered</h5>${tags(c.topics)}</div>
+    <div class="block"><h5>Skills Learned</h5>${list(c.skills)}</div>
+    <div class="block"><h5>How I Apply It</h5><p class="body-text">${esc(c.applied)}</p></div>
+    <div class="block"><h5>Note</h5><p class="body-text">${esc(c.note)}</p></div>
+    <div class="proj-foot">
+      ${c.img?`<a class="btn btn-primary btn-sm" href="${c.img}" target="_blank" rel="noopener">Open Certificate Image ↗</a>`:""}
+      <button class="btn btn-ghost btn-sm" data-close>Close</button></div>`;
+  showModal();
+}
+function openInternCert(i){
+  const c = INTERN_CERTS[i];
+  modalCard.innerHTML = `
+    <button class="modal-close" data-close>✕</button>
+    <div class="eyebrow">Internship Certificate</div>
+    <h3 style="margin-top:8px">${esc(c.co)}</h3>
+    <div class="modal-shot" data-img="${c.img}" data-imgtitle="${esc(c.co)} — Internship Certificate"><img src="${c.img}" alt="${esc(c.co)} internship certificate" /><span class="peek">🔍 Click for full size</span></div>
+    <div class="kv">
+      <div><b>Company</b><span>${esc(c.co)}</span></div>
+      <div><b>Industry</b><span>${esc(c.industry)}</span></div>
+      <div><b>Role</b><span>${esc(c.role)}</span></div>
+      <div><b>Duration</b><span>${esc(c.duration)}</span></div>
+      <div><b>Credential</b><span>${esc(c.cred)}</span></div>
+    </div>
+    <div class="block"><h5>Skills Gained</h5>${tags(c.skills)}</div>
+    <div class="block"><h5>Summary</h5><p class="body-text">${esc(c.summary)}</p></div>
+    <div class="proj-foot">
+      <a class="btn btn-primary btn-sm" href="${c.img}" target="_blank" rel="noopener">Open Certificate Image ↗</a>
+      <button class="btn btn-ghost btn-sm" data-close>Close</button></div>`;
+  showModal();
+}
+function openImage(src,title){
+  modalCard.innerHTML = `
+    <button class="modal-close" data-close>✕</button>
+    <div class="eyebrow">Full Preview</div>
+    <h3 style="margin-top:8px">${esc(title||"Preview")}</h3>
+    <div class="lightbox"><img src="${src}" alt="${esc(title||"Preview")}" /></div>
+    <div class="proj-foot">
+      <a class="btn btn-primary btn-sm" href="${src}" target="_blank" rel="noopener">Open in new tab ↗</a>
+      <a class="btn btn-ghost btn-sm" href="${src}" download>Download</a>
+      <button class="btn btn-ghost btn-sm" data-close>Close</button></div>`;
+  showModal();
+}
+function openGallery(i){
+  const p = PROJECTS[i];
+  const imgHTML = (p.screenshots && p.screenshots.length)
+    ? p.screenshots.map(s=>`
+        <div class="modal-shot" data-img="${s.url}" data-imgtitle="${esc(p.title)} — ${esc(s.title)}" style="margin-top:0">
+          <img src="${s.url}" alt="${esc(s.title)}" style="object-fit:contain;max-height:210px;background:#fff" loading="lazy"/>
+          <span class="peek">🔍 ${esc(s.title)} — Click to enlarge</span>
+        </div>`).join("")
+    : p.shots.map(s=>`<div class="shot" style="aspect-ratio:16/10;background:${p.grad}"><div class="label"><small>Dashboard View</small><b style="margin-top:6px">${esc(s)}</b></div></div>`).join("");
+  modalCard.innerHTML = `
+    <button class="modal-close" data-close>✕</button>
+    <div class="eyebrow">${esc(p.category)}</div>
+    <h3 style="margin-top:8px">${esc(p.title)} — Dashboard Gallery</h3>
+    <div class="grid-3" style="gap:14px;margin-top:20px">${imgHTML}</div>
+    <div class="block"><h5>What these views show</h5>${list(p.insights)}</div>
+    <div class="proj-foot">
+             <a class="btn btn-ghost btn-sm" href="${p.links[0][1]}" target="_blank" rel="noopener">GitHub ↗</a>
+      <button class="btn btn-ghost btn-sm" data-close>Close</button></div>`;
+  showModal();
+}
+function showModal(){
+  modal.classList.add("open");
+  document.body.style.overflow="hidden";
+  modalCard.scrollTop = 0;
+}
+document.addEventListener("click",e=>{
+  const img = e.target.closest("[data-img]");
+  if(img){ openImage(img.dataset.img, img.dataset.imgtitle); return; }
+  const g = e.target.closest("[data-gal]");
+  if(g){ openGallery(+g.dataset.gal); return; }
+  const t = e.target.closest("[data-proj]");
+  if(t){ openProject(+t.dataset.proj); return; }
+  const c = e.target.closest("[data-cert]");
+  if(c){ openCert(+c.dataset.cert); return; }
+  const ic = e.target.closest("[data-icert]");
+  if(ic){ openInternCert(+ic.dataset.icert); return; }
+  if(e.target.closest("[data-close]") || e.target===modal) closeModal();
+});
+function closeModal(){ modal.classList.remove("open"); document.body.style.overflow=""; }
+document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeModal(); });
+
+/* animate any level bar with data-w when it scrolls into view */
+const bio = new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting) return;
+  e.target.style.width = e.target.dataset.w; bio.unobserve(e.target);
+}),{threshold:.3});
+document.querySelectorAll(".level > i[data-w]").forEach(el=>bio.observe(el));
+
+/* ================= NAV / SCROLL ================= */
+const burger = $("#burger"), mm = $("#mobileMenu");
+burger.addEventListener("click",()=>mm.classList.toggle("open"));
+mm.addEventListener("click",e=>{ if(e.target.tagName==="A") mm.classList.remove("open"); });
+
+const navAnchors = [...document.querySelectorAll("[data-nav]")];
+const sections = NAV.map(([,id])=>document.getElementById(id)).filter(Boolean);
+function onScroll(){
+  const y = window.scrollY;
+  let cur = sections[0].id;
+  sections.forEach(s=>{ if(y >= s.offsetTop - 140) cur = s.id; });
+  navAnchors.forEach(a=>a.classList.toggle("active", a.dataset.nav===cur));
+  const h = document.documentElement.scrollHeight - window.innerHeight;
+  $("#progress").style.width = (h>0 ? (y/h)*100 : 0)+"%";
+  $("#toTop").classList.toggle("show", y > 700);
+}
+window.addEventListener("scroll",onScroll,{passive:true});
+onScroll();
+$("#toTop").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+
+/* reveal on scroll */
+const io = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }}),{threshold:.1});
+function observeReveals(){ document.querySelectorAll(".reveal:not(.in)").forEach(el=>io.observe(el)); }
+observeReveals();
+
+/* hero parallax (pointer only) */
+const cardInner = $("#cardInner");
+if(window.matchMedia("(hover:hover)").matches){
+  $("#home").addEventListener("mousemove",e=>{
+    const r = $("#home").getBoundingClientRect();
+    const x = (e.clientX - r.left - r.width/2)/r.width;
+    const y = (e.clientY - r.top - r.height/2)/r.height;
+    cardInner.style.transform = `translate3d(${x*16}px,${y*16}px,0)`;
+  });
+}
+
+/* animated stat counters */
+const statEls = document.querySelectorAll("[data-count]");
+const sio = new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting) return;
+  const el = e.target, raw = el.dataset.count, num = parseFloat(raw), suffix = raw.replace(/[\d.]/g,"");
+  let start = null;
+  const step = ts => { start ??= ts; const pr = Math.min((ts-start)/1100,1);
+    el.textContent = Math.round(num*pr)+ (pr===1?suffix:""); if(pr<1) requestAnimationFrame(step); };
+  requestAnimationFrame(step); sio.unobserve(el);
+}),{threshold:.5});
+statEls.forEach(el=>sio.observe(el));
+</script>
+</body>
+</html>
